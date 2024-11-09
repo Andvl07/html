@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px;
+            border: 1px solid #ccc; 
+        }
+        .left, .center, .right {
+            flex: 1; 
+            text-align: center;
+        }
+        .left {
+            text-align: left;
+        }
+        .right {
+            text-align: right; 
+        }
+    </style>
 </head>
 <body>
-    <a href="donnerstag.html">Четверг</a><br>
-    <a href="index.html">Расписание</a>
-    <a href="samstag.html">Суббота</a><br>
+    <div class="center"><h1>Пятница</h1></div>
+        <div class="container">
+        <div class="left"><a href="donnerstag.html">Четверг</a></div>
+        <div class="center"><a href="index.html">Расписание</a></div>
+        <div class="right"><a href="samstag.html">Суббота</a></div>
+    </div>
 </body>
 </html>
