@@ -30,6 +30,25 @@
         <div class="left"><a href="freitag.html">Пятница</a></div>
         <div class="center"><a href="index.html">Расписание</a></div>
         <div class="right"><a href="sontag.html">Воскресенье</a></div>
-    </div>
+    </div></br>
+    <div class="container">
+    
+        <div class="left"><h1>Задачи:</h1>
+            <div class="container">
+                <input type="text" id="textInput" onkeydown="saveText(event)" style="width: 1521px;">
+                <p id="savedText"></p>
+                
+                <script>
+                function saveText(event) {
+                  if (event.keyCode === 13) {
+                    var textInput = document.getElementById("textInput");
+                    var savedText = document.getElementById("savedText");
+                    savedText.innerText = textInput.value;
+                    textInput.value = "способа ввода задачи через окно в самой странице не было обнаружено в интернете";
+                  }
+                }
+                </script>
+            </div>
+        </div>
 </body>
 </html>

@@ -41,8 +41,25 @@
         <div class="right"><a href="montag.html">Понедельник</a></div><br>
     </div><br>
     <div class="container">
-        <div class="center"><a Задачи:</a>
+    
+        <div class="left"><h1>Задачи:</h1>
+            <div class="container">
+                <input type="text" id="textInput" onkeydown="saveText(event)" style="width: 1521px;">
+                <p id="savedText"></p>
+                
+                <script>
+                function saveText(event) {
+                  if (event.keyCode === 13) {
+                    var textInput = document.getElementById("textInput");
+                    var savedText = document.getElementById("savedText");
+                    savedText.innerText = textInput.value;
+                    textInput.value = "способа ввода задачи через окно в самой странице не было обнаружено в интернете";
+                  }
+                }
+                </script>
+            </div>
         </div>
 </body>
+
 
 </html>
